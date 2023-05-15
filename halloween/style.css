@@ -1,0 +1,87 @@
+body {
+	  background-color: black;
+    margin:0;
+}
+
+
+#dim{
+    margin: 0;
+    z-index: 10;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#text {
+	font-size: 15px;
+	color: white;
+	margin:20px;
+	font-family: 'Share Tech Mono', monospace;
+	min-height: 100vh;
+}
+
+#bold {
+	background-color: rgba(0,0,0,0.4);
+}
+
+@font-face {
+  	font-family: neon;
+  	src: url(neon.ttf);
+}
+
+#ad {
+	  z-index: -1;
+  	font-family: neon;
+  	color: #FB4264;
+  	font-size: 35px;
+  	line-height: 2em;
+  	text-shadow: 0 0 3vw #F40A35;
+  	animation: neon 2s ease infinite;
+  	-moz-animation: neon 2s ease infinite;
+  	-webkit-animation: neon 2s ease infinite;
+}
+
+@keyframes neon {
+  	0%,
+  	100% {
+    	text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    	color: #FED128;
+  	}
+  	50% {
+    	text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    	color: #806914;
+  	}
+}
+
+
+#city {
+	z-index: -1;
+	color: rgba(255,255,255,0.8);
+	display: inline-block;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+/*	max-width: 100px;
+	max-height: 100px;*/
+	transform: rotate(270deg) translate(-25%, -25%);
+	/*border: 1px hotpink solid;*/
+}
+
+
+#alert1, #alert2 {
+  padding: 30px;
+  display: none;
+  border-radius: 5px;
+  height: 300px;
+  width: 60vw;
+  z-index: 1000;
+  border: 3px solid white;
+  background-color: black;
+  color: white;
+}
+
